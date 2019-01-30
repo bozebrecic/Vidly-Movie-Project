@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>Movies</th>
-            <th>Genre</th>
+            <th>Nubmer in Stock</th>
         </tr>
     </thead>
     <tbody>
@@ -25,7 +25,7 @@
                     @Html.ActionLink(movie.Name, "Edit", new { id = movie.Id }, null)
                 </td>
                 <td>
-                    @movie.Genre.Name
+                    @movie.NumberInStock
                 </td>
             </tr>
         }
